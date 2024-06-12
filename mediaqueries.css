@@ -1,0 +1,112 @@
+@media(max-width:1023px) {
+    header img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .social-icons a {
+       /* gap: 50px;*/
+        margin: 5px 5px;
+        padding: 1px;
+        font-size: 13px;
+        width: 21px;
+        height: 21px;
+    } 
+}
+
+@media(max-width:767px) {
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 9;
+        background-color: var(--clr-main);
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .aside-visible {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .inicio_section-text h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .inicio_section-text p {
+        font-size: 30px;
+    } 
+
+    .header-mobile {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-mobile .logo {
+        font-size: 24px;
+    } 
+
+    .open-menu, .close-menu {
+        background-color: transparent;
+        color: var(--clr-gray);
+        border: 0;
+        font-size: 32px;
+        cursor: pointer;
+    } 
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    } 
+
+    #footer2 {
+        display: flex;
+        background-color: var(--clr-main);
+        border-top: 2px solid white;
+    }
+
+    .direccion {
+        color: white;
+    }
+
+    .footer2-container {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        gap: 50px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	} 
+
+    /* .social-icons a {
+         margin: 0px 5px;
+         padding: 1px;
+         font-size: 20px;
+         width: 30px;
+         height: 30px;
+    } */ 
+
+}

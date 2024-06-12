@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" /> 
+    <link rel="stylesheet" href="./mediaqueries/mediaqueriescontacto.css" /> 
+    <!-- iconos boostrap --> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-mobile">
+        <h1 class="logo">Los Cucuruchitos</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+      </header>
+      <aside>
+        <button class="close-menu" id="close-menu">
+          <i class="bi bi-x"></i>
+        </button>
+        <header class="logo">
+          <img src="./img/gallery/logo.jpg" class="logo-img" alt="" />
+        </header>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="index.html" class="boton-menu"
+                ><i class="fa-solid fa-house"></i>Inicio</a
+              >
+            </li>
+            <li>
+              <a href="servicios.html" class="boton-menu"
+                ><i class="fa-solid fa-briefcase"></i>Servicios</a
+              >
+            </li>
+            <li>
+              <a href="imagenes.html" class="boton-menu"
+                ><i class="fa-solid fa-image"></i>Imagenes</a
+              >
+            </li>
+            <li>
+              <a href="contacto.html" class="boton-menu active"
+                ><i class="fa-solid fa-address-book"></i>Contacto</a
+              >
+            </li>
+            <!-- <li>
+              <a href="ubicacion.html" class="boton-menu"
+                ><i class="bi bi-hand-index-thumb"></i>Ubicacion</a
+              >
+            </li> -->
+            <li>
+              <a href="nosotros.html" class="boton-menu"
+                >
+                <i class="bi bi-people-fill"></i>Nosotros</a> 
+            </li>
+          </ul>
+        </nav>
+        <footer> 
+          <div class="direccion">
+            <p>Direccion</p>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/freecodecamp/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/freecodecamp" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a> 
+            <a href="" target="_blank">
+              <i class="bi bi-telephone"></i>
+            </a>
+          </div>
+        </footer>
+      </aside>
+
+      <main>
+        <section id="#contacto" class="contacto-section">
+          <!-- <h2>Validaciones de Formulario</h2> -->
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/mauriciohalberg@gmail.com"
+            method="POST"
+            target="_blank"
+          >
+          
+            <legend name="name">Envíanos tus comentarios</legend>
+
+            <input
+              type="text"
+              name="name"
+              placeholder="nombre"
+              title="Nombre sólo acepta letras y espacios en blanco"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              title="Email incorrecto"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+              required
+            />
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Asunto"
+              title="El Asunto es requerido"
+              required
+            />
+
+            <textarea
+              name="comments"
+              cols="50"
+              rows="5"
+              placeholder="comentarios"
+              title="Tu comentario no debe exceder los 255 caracteres"
+              data-pattern="^.{1,255}$"
+              required
+            ></textarea>
+
+            <input type="submit" value="Enviar" />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/contacto.html"
+            />
+
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/index.html"
+            /> -->
+
+            <div class="contact-form-loader none">
+              <img src="./img/spinning-circles.svg" alt="Cargando" />
+            </div>
+
+            <div class="contact-form-response none">
+              <p>Los datos han sido enviados</p>
+            </div>
+          </form>
+        </section>
+
+        <footer id="footer2">
+          <div class="footer2-container">
+            <div class="direccion">
+              <p>Direccion</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/freecodecamp/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://instagram.com/freecodecamp" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="bi bi-telephone"></i>
+              </a>
+  
+              <!-- <a href="" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a> -->
+            </div>
+          </div>
+        </footer>
+        <!-- icono whatsapp -->
+        <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

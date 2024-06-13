@@ -213,6 +213,7 @@ footer p {
     font-weight: 500;
     color: var(--clr-white);
     color: rgba(24, 23, 23, 0.849);
+    
 }
 
 .inicio_section-text p {
@@ -220,6 +221,7 @@ footer p {
     text-align: center;
     color: var(--clr-white);
     padding: 150px;
+    width: 100%;
   } 
 
 /* ---------------------------------------------------------------------- */ 

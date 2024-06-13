@@ -47,7 +47,7 @@
     }
 
     .inicio_section-text p {
-        font-size: 30px;
+        font-size: 25px;
     } 
 
     .header-mobile {
@@ -124,18 +124,15 @@
     }
 
     .inicio_section-text p {
-        font-size: 20px;
+        font-size: 16px;
         width: 100%;
+        padding: 100px;
     } 
 } 
 
 @media(max-width:400px) {
+
     .inicio_section-text h1 {
         font-size: 16px;
-    }
-
-    .inicio_section-text p {
-        font-size: 16px;
     } 
-
 }

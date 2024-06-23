@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Document</title> 
+    <!--  --> 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animaciones.css" />
     <link rel="stylesheet" href="mediaqueries.css" /> 
+    <link rel="stylesheet" href="splide.min.css">
+    <script src="splide.min.js"></script>
 
     <!-- iconos boostrap --> 
     <link
@@ -21,8 +24,7 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-
+    <div class="wrapper"> 
       <header class="header-mobile">
         <h1 class="logo">Los Cucuruchitos</h1>
         <button class="open-menu" id="open-menu">
@@ -62,35 +64,16 @@
               <a href="ubicacion.html" class="boton-menu"
                 ><i class="bi bi-hand-index-thumb"></i>Ubicacion</a
               >
-            </li> -->
+            </li>
             <li>
               <a href="nosotros.html" class="boton-menu"
                 >
                 <i class="bi bi-people-fill"></i>Nosotros</a> 
-            </li>
+            </li> -->
           </ul>
         </nav>
-        <footer>
-          <div class="direccion">
-            <p>Direccion</p>
-          </div>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/freecodecamp/" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://instagram.com/freecodecamp" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=" target="_blank">
-              <i class="bi bi-telephone"></i>
-            </a>
-
-            <!-- <a href="" target="_blank">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a> -->
-          </div>
-        </footer>
       </aside>
+
       <main>
         <section id="#inicio" class="inicio-section">
           <div class="inicio_section-text">
@@ -101,11 +84,106 @@
           </div>
         </section>
 
+        <section class="nosotros-index">
+          <h2>QUIENES SOMOS</h2>
+          <p>Inflables Los Cucuruchitos es una plataforma dedicada al alquiler de juegos de salón. <br>
+            Un negocio familiar con mas de 10 años de Trayectoria. 
+            Nos encargamos de llevar felicidad y diversión a tus eventos con los mejores juegos y servicios 
+            del mercado. 
+            Si tenes un cumpleaños, fiesta, eventos empresariales, juntada con amigos, bares o comercios
+            y precisas de juegos, no dudes en contactarnos!
+          </p>
+          <p>Ofrecemos diversión garantizada, encargándonos del traslado de los juegos para que tu única 
+            tarea sea elegir los que mas te gusten. Trabajamos con juegos de Salón e inflables!
+          </p>
+        </section>
+
+        <section class="servicios-index">
+          <h2>NUESTROS SERVICIOS</h2>
+          <div class="contenido-servicios-index">
+            <div class="contenido-servicios-orden-index">
+              <p>✅Castillos Inflables.</p>
+              <p>✅Cama Elastica.</p>
+              <p>✅Metegoles.</p>
+              <p>✅Minipool.</p>
+              <p>✅Jenga.</p>
+            </div>
+            <div class="contenido-servicios-orden-index">
+              <p>✅Tejo de Mano.</p>
+              <p>✅Karaoque</p>
+              <p>✅Proyector.</p>
+              <p>✅Barra de Tragos</p>
+              <p>✅Juguetes.</p>
+            </div>
+            <div class="contenido-servicios-orden-index">
+              <p>✅Gazebos.</p>
+              <p>✅Mesa Ratona.</p>
+              <p>✅Sillones.</p>
+              <p>✅Mesas</p>
+              <p>✅Sillas.</p>
+            </div>
+          </div>  
+        </section>
+
+        <section class="icons-index">
+          <div class="icons-index-contenedor">
+            <div class="icons-index-card">
+              <img src="./img/tel.jpeg" alt="">
+              <p>Elegí el juego o combo que más te guste</p>
+            </div>
+            <div class="icons-index-card">
+              <img src="./img/mujer.jpeg" alt="">
+              <p>Contactanos para fijar una fecha de entrega</p>
+            </div>
+            <div class="icons-index-card">
+              <img src="./img/camion.jpeg" alt="">
+              <p>Entregamos todos los juegos en tu casa</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide-index">
+          <div class="contenido">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                        <li class="splide__slide"><img src="./img/gallery/10gaebos3.jpg" alt=""></li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </section> 
+        
+        
        <footer id="footer2">
         <div class="footer2-container">
-          <div class="direccion">
-            <p>Direccion</p>
+
+          <div class="direccion-footer">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Tu direccion</p>
           </div>
+
+          <div class="telefono-footer">
+            <i class="bi bi-telephone"></i>
+            <p>291-654423</p>
+          </div>
+
+          <div class="email-footer">
+            <i class="fa-regular fa-envelope"></i>
+            <p>tuemail@gmail.com</p>
+          </div>
+
           <div class="social-icons">
             <a href="" target="_blank">
               <i class="fab fa-facebook-f"></i>
@@ -122,7 +200,6 @@
           </div>
         </div>
       </footer>
-
       <!-- icono whatsapp -->
       <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
@@ -131,5 +208,36 @@
       </main>
     </div>
     <script src="main.js"></script>
+    <script>
+      var splide = new Splide( '.splide', {
+        type   : 'loop',
+        perMove: 1,
+perPage: 4,
+gap    : '.2rem',
+breakpoints: {
+
+  1023: {
+    perPage: 3,
+    gap    : '.3rem',
+  },
+
+  767: {
+    perPage: 3,
+    gap    : '.7rem',
+  },
+
+  580: {
+    perPage: 2,
+    gap    : '.2rem',
+  }, 
+
+  350: {
+    perPage: 2,
+  }, 
+},
+} );
+
+splide.mount();
+  </script>
   </body>
 </html>

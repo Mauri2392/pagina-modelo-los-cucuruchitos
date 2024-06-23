@@ -4,11 +4,15 @@
 
 @media(max-width:1023px) {
     .contact-form {
-        width: 50%;
+        width: 100%;
+
+    .contact-form legend {
+            font-size: 16px; 
+        }
     }
 } 
 
-@media(max-width:690px) {
+@media(max-width:767px) {
     .contact-form legend {
         font-size: 20px; 
     } 
@@ -22,6 +26,19 @@
     }
 
     .contact-form {
-        width: 50%;
+        width: 70%;
+    }
+
+    .contact-section {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .contact-contenedor {
+        margin: 0px;
+    }
+
+    @media(max-width:500px) {
+        
     }
 }

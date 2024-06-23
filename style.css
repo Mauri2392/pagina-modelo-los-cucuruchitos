@@ -40,6 +40,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: var(--clr-main);
+
 } 
 
 aside {
@@ -60,8 +61,8 @@ aside {
 }
 
 header img {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     border-radius: 20px;
     border: 3px solid var(--clr-white);
     margin-top: 24px;
@@ -128,7 +129,7 @@ header h1 {
 } 
 
 footer {
-    color: var(--white);
+    color: var(--white); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,13 +185,65 @@ footer p {
     display: none;
 } 
 
-#footer2 {
+/* #footer2 {
     display: none;
+} */
+
+#footer2 {
+    display: flex;
+    background-color: var(--clr-main);
+    border-top: 2px solid white;
+}
+
+.direccion,
+.pago, 
+.telefono,
+.email {
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    margin: 20px;
+    font-weight: 600;
 } 
 
+
+/* .bi bi-geo-alt {
+    font-size: 90px;
+} */
+
+.footer2-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    gap: 90px;
+} 
+
+.direccion-footer,
+.email-footer,
+.telefono-footer {
+    color: var(--clr-white);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    margin: 20px;
+    font-weight: 600;
+}
+
 /* ---------------------------------------------------------------------- */ 
+main {
+    display: flex;
+    flex-direction: column;
+}
 .inicio-section {
-    height: 100%;
+    height: 100vh;
     width: 100%; 
     margin: 0 auto;
     background-color: #e2e2e2;
@@ -220,14 +273,139 @@ footer p {
     font-size: 40px;
     text-align: center;
     color: var(--clr-white);
-    padding: 150px;
+    padding: 100px;
     width: 100%;
-  } 
+} 
+
+/* ---------------------------------------- */ 
+
+.nosotros-index {
+    padding: 40px 40px;
+    width: 90%;
+    margin: 0 auto; /* centra en el medio la informacion */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--clr-white);
+    
+}
+
+.nosotros-index p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.servicios-index {
+    /* padding: 0px 0px;*/
+    width: 90%;
+    margin: 0 auto; /* centra en el medio la informacion */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--clr-white);
+}
+
+.servicios-index p {
+    font-size: 16px;
+}
+
+.contenido-servicios-index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 90%;
+    /* gap: 150px; */ 
+}
+
+.contenido-servicios-orden-index {
+    /*width: 250px;
+    height: 250px;*/
+    margin: 0px 0px;
+    padding: 0px;
+    color: var(--clr-white);
+}
+
+.icons-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+}
+
+.icons-index-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    /*  margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 0px; */
+}
+
+.icons-index-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: auto;
+    padding: 20px 20px;
+}
+
+.icons-index-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.icons-index-card p {
+    font-size: 16px;
+}
+
+ 
+.slide-index {
+    /* background-color: black; */
+    width: 100%;
+} 
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    /*background: lightgray;*/
+    margin-bottom: 30px;
+} 
+
+.splide__slide {
+   padding-top: 30px;
+   padding-bottom: 30px;
+} 
+
+.splide__slide img {
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+} 
+
+/* ---------------------------------------- */ 
 
 /* ---------------------------------------------------------------------- */ 
 
 .servicios-section {
-    background-color: var(--clr-white);
+    /*background-color: var(--clr-white);*/
     padding-top: 50px;
     /* padding-left: 30px; */
     margin-left: 0;
@@ -286,7 +464,7 @@ p {
 
 /* ---------------------------------------------------------------------- */ 
 .imagenes-section {
-    background-color: var(--clr-main);
+    background-color:  #ffffffe3;
     height: 100%;
 } 
 
@@ -326,14 +504,30 @@ p {
 /* ---------------------------------------------------------------------- */ 
 .contacto-section {
     /* background-color: var(--clr-white);*/
+    width: 100%;
     height: 100%;
     /* padding: 60px;*/
     background: url(./img/gallery/27puff\ mas\ mesa.jpg); 
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    align-content: center;
+    align-content: center; 
 } 
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+    background-color: #ffffff4b;
+    
+}
+
+.contact-contenedor {
+    margin: 50px; 
+    /*padding: 30px;*/
+    /*background-color: #ffffff4b;*/
+}
 
 /* .contacto-section h2 {
     text-align: center;
@@ -342,17 +536,17 @@ p {
 .contact-form {
     --form-ok-color: green;
     --form-error-color: red;
-    width: 40%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color: #ffffff4b;
+    /*border: 2px solid black;
+    border-radius: 20px; */
+    /*background-color: #ffffff4b;*/
     margin: auto;
-    
+    margin-top: 30px;
     /* margin-left: auto; */
     /* margin-right: auto;*/
     /*margin-top: 20px;*/
@@ -365,7 +559,7 @@ p {
     padding: 8px;
     margin: 10px auto;
     display: block;
-    width: 80%;
+    width: 95%;
 } 
 
 .contact-form textarea {
@@ -374,7 +568,7 @@ p {
 
 .contact-form legend,
 .contact-form-response {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     color: #000;
@@ -562,3 +756,42 @@ p {
         line-height: 66px;
 	}
 } */
+
+
+
+
+
+.servicios-section2 {
+    margin-top: 50px; /* distancia entre el header y la section hero */
+    padding: 0px 0; /* padding arriba y abajo para que no se pegue tanto al borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./img/gallery/29puff\ mas\ mesa3.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+  } 
+  
+  .contenedor1, 
+  .contenedor2, 
+  .contenedor3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 100px;
+      margin: 20px;
+  } 
+  
+  .contenedor1 img,  
+  .contenedor2 img, 
+  .contenedor3 img {
+      width: 300px;
+      height: 350px; 
+  }
+  
+  .contenido-servicios-orden p {
+      font-size: 20px;
+  }

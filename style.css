@@ -245,7 +245,7 @@ main {
 .inicio-section {
     height: 100vh;
     width: 100%; 
-    margin: 0 auto;
+   /*  margin: 0 auto;
     background-color: #e2e2e2;
     background: url(./img/gallery/1castillos\ inflables2.jpg);
     background-repeat: no-repeat;
@@ -253,7 +253,7 @@ main {
     background-position: center; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */ 
     /* max-width: 100%;
     margin: 0 auto; */ 
 }   
@@ -756,10 +756,6 @@ p {
         line-height: 66px;
 	}
 } */
-
-
-
-
 
 .servicios-section2 {
     margin-top: 50px; /* distancia entre el header y la section hero */

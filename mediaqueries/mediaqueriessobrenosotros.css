@@ -3,10 +3,17 @@
 }
 
 @media(max-width:1023px) {
-
+    .nosotros-section {
+      /*  padding-top: 50px; */
+        margin-top: 50px;
+    }
 }
 
-@media(max-width:767px) {
+@media(max-width:767px) { 
+
+    .nosotros-info {
+        width: 90%;
+    }
 
     .nosotros-info p {
         font-size: 24px;
@@ -19,6 +26,21 @@
     .nosotros-imagen img {
         width: 150px;
         height: 150px;
+    }
+
+    @media(max-width:500px) { 
+        .nosotros-section {
+            margin-top: 50px;
+        } 
+
+        .nosotros-info {
+            width: 100%;
+        } 
+
+        .nosotros-info p {
+            font-size: 16px;
+        } 
+
     }
 
 

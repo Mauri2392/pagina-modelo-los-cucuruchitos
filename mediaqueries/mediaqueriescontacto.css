@@ -4,7 +4,7 @@
 
 @media(max-width:1023px) {
     .contact-form {
-        width: 100%;
+        width: 50%;
 
     .contact-form legend {
             font-size: 16px; 
@@ -13,6 +13,16 @@
 } 
 
 @media(max-width:767px) {
+
+    .contenido-contacto-index {
+        flex-direction: column;
+    } 
+
+    .contenido-contacto-orden-index1,
+    .contenido-contacto-orden-index2,
+    .contenido-contacto-orden-index3 {
+        padding: 0px;
+    }
     .contact-form legend {
         font-size: 20px; 
     } 
@@ -30,13 +40,14 @@
     }
 
     .contact-section {
-        margin: 0px;
+      /*   margin: 0px; */
         margin-bottom: 20px;
     }
 
+    /*  
     .contact-contenedor {
-        margin: 0px;
-    }
+      margin: 0px;
+    } */
 
     @media(max-width:500px) {
         
